@@ -6,7 +6,7 @@ har2lilua Tests
 from __future__ import unicode_literals
 from io import open
 import unittest
-import har2lilua
+from har2lilua import har2lilua
 
 def _read_testfiles():
     with open("test.har", "r", encoding="utf-8") as fil:
