@@ -17,7 +17,8 @@ testing.
 with `pip`.  It requires the `dateutils` package. 
 
 1. Clone repo 
-2. `pip install dateutils`  (e.g. in a virtualenv)
+2. In e.g. a virtualenv, do `pip install .` from inside the repo dir or
+   install `dateutils` separately. 
 3. The program in question is `har2lilua/har2lilua.py`.
 
 ## Usage
