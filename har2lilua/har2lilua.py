@@ -8,6 +8,7 @@ text browser) into a LoadImpact (loadimpact.com) user scenario script in
 Lua.
 
 """
+
 from __future__ import unicode_literals
 from __future__ import print_function
 import re
@@ -72,7 +73,7 @@ _LUA_UA_FALLBACK = \
 
 # these are fallbacks in case the user-agent must be determined from
 # the browser name only; one may need to experiment with more browsers
-# to see just how genericly useful they are.
+# to see just how generically useful they are.
 _BROWSER_UA_FALLBACKS = {
     "firefox": "Mozilla/5.0 Gecko Firefox",
     "iceweasel": "Mozilla/5.0 Gecko Firefox",
@@ -94,8 +95,8 @@ def _clean_lua(string, brackets=False):
 
     Args:
         string (str): String to clean
-        brackets (bool, optional): If string should be treated as
-            [[ ]] enclosed lua string. Using [[ ]] over escaping " and '
+        brackets (bool, optional): Determines ifstring should be treated as
+            an [[ ]] enclosed lua string. Using [[ ]] over escaping " and '
             makes for a more readable output result for things like
             POST data.
     Notes:
@@ -103,7 +104,7 @@ def _clean_lua(string, brackets=False):
         embedded "/', but if there are embedded [[ ]] or [=..=[ ]=..=]
         we must use correct brackets to escape those ([====[ ...
         ]====] with the number of '=' different from any embedded in
-        the string)
+        the string).
 
     """
     if brackets and not string.endswith("]"):

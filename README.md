@@ -9,12 +9,12 @@ sessions.  This program converts such a HAr file to a user scenario
 script that can be loaded into the LoadImpact service for performance
 testing.
 
-har2lilua is currently lacking some features, like form handling.
+`har2lilua` is currently lacking some features, like form handling.
 
 ## Installation
 
-`har2lilua` is not currently on PyPi.  It requires the `dateutils`
-package. To install:
+`har2lilua` is not currently on PyPi, so can't be directly be installed
+with `pip`.  It requires the `dateutils` package. 
 
 1. Clone repo 
 2. `pip install dateutils`  (e.g. in a virtualenv)
@@ -26,7 +26,7 @@ package. To install:
    dev consoles; choose the Network tab/section. Reload the page and
    click a link. Then right-click in the console and select to save 
    as HAR. Save as, say, `mytest.har`.
-2. Run `python har2lilua path/to/mytest.har`. This creates `mytest.lua`. 
+2. Run `python har2lilua path/mytest.har`. This creates `path/mytest.lua`. 
 3. Go to loadimpact.com, log in to the dashboard and copy/paste the contents 
    of `mytest.lua` as a new user scenario. You can then tweak it
    manually if you want.
