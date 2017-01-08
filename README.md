@@ -27,7 +27,7 @@ with `pip`.  It requires the `dateutils` package.
    dev consoles; choose the Network tab/section. Reload the page and
    click a link. Then right-click in the console and select to save 
    as HAR. Save as, say, `mytest.har`.
-2. Run `python har2lilua path/mytest.har`. This creates `path/mytest.lua`. 
+2. Run `python har2lilua.py path/mytest.har`. This creates `path/mytest.lua`. 
 3. Go to loadimpact.com, log in to the dashboard and copy/paste the contents 
    of `mytest.lua` as a new user scenario. You can then tweak it
    manually if you want.
